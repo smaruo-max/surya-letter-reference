@@ -8,7 +8,7 @@
   <title>SURYA｜お手紙のデザイン比較</title>
   <meta name="description" content="紙、温かな文字色、上品な手書き書体を選び、スマートフォンでお手紙全体の読み心地を比較する参考ページ。">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Yuji+Syuku&display=swap">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261113-selector">
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -18,15 +18,13 @@
   </header>
   <main id="top">
     <section class="introduction" aria-labelledby="page-title">
-      <p class="eyebrow">LETTER DESIGN STUDY</p>
-      <h1 id="page-title">丁寧に書いた言葉が、<br>やさしく届くように。</h1>
-      <p class="intro-text">紙・文字色・上品な手書き。<br>選びながら、手紙全体で見比べてください。</p>
+      <h1 id="page-title" class="visually-hidden">お手紙のデザイン比較</h1>
+      <p class="intro-text">紙・文字色・書体を、それぞれ選べます。気になるデザインをお知らせください。</p>
       <div class="category-buttons" aria-label="比較する項目">
-        <button type="button" data-open-settings="paper"><span class="category-label">紙</span><span class="category-count">3案</span><small id="paper-short">切り絵レター</small></button>
-        <button type="button" data-open-settings="ink"><span class="category-label">文字色</span><span class="category-count">4案</span><small id="ink-short">深いセピア</small></button>
-        <button type="button" data-open-settings="font"><span class="category-label">書体</span><span class="category-count">3案</span><small id="font-short">端正な中字</small></button>
+        <button type="button" data-open-settings="paper" aria-haspopup="dialog" aria-controls="settings-dialog"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M7 3h10l5 5v17H7zM17 3v6h5M4 7v17M11 13h7M11 17h7M11 21h5"/></svg></span><span class="category-copy"><span class="category-label">紙を選ぶ</span><small id="paper-short">切り絵レター</small></span><span class="category-count">3案</span><span class="category-arrow" aria-hidden="true">›</span></button>
+        <button type="button" data-open-settings="ink" aria-haspopup="dialog" aria-controls="settings-dialog"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M14 3C7.5 3 3 7.5 3 14s4.5 11 10 11c2.5 0 3-1.5 2-3s-.5-3 1.5-3H20c3.5 0 5-2.5 5-5C25 7.5 20 3 14 3z"/><circle cx="9" cy="10" r="1.2"/><circle cx="15" cy="7.5" r="1.2"/><circle cx="20" cy="11" r="1.2"/><circle cx="7.5" cy="16" r="1.2"/></svg></span><span class="category-copy"><span class="category-label">文字色を選ぶ</span><small id="ink-short">深いセピア</small></span><span class="category-count">4案</span><span class="category-arrow" aria-hidden="true">›</span></button>
+        <button type="button" data-open-settings="font" aria-haspopup="dialog" aria-controls="settings-dialog"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="m18 4 6 6-13 13-8 2 2-8zM15 7l6 6M5 17l6 6M3 25l4-4"/></svg></span><span class="category-copy"><span class="category-label">書体を選ぶ</span><small id="font-short">端正な中字</small></span><span class="category-count">3案</span><span class="category-arrow" aria-hidden="true">›</span></button>
       </div>
-      <p class="design-caption">ボタンから候補を選ぶと、下の手紙に反映されます。</p>
     </section>
     <section class="letter-section" aria-labelledby="letter-title">
       <p class="section-label" id="letter-title">この先にある景色</p>
