@@ -28,3 +28,13 @@
 .letter-copy{line-break:strict;word-break:normal;overflow-wrap:break-word;text-wrap:pretty}
 .letter-copy .reading-line,.letter-copy .reading-sentence{display:block}
 .letter-copy .keep{display:inline-block;max-width:100%;vertical-align:top;white-space:normal;word-break:normal;overflow-wrap:break-word}
+
+html{scroll-padding-top:var(--bar-height,112px)}
+.tabs{grid-template-columns:repeat(4,minmax(0,1fr));padding:0 12px}
+.tabs button{font-size:13px;padding-right:4px;padding-left:4px}
+.message-options{display:grid;gap:12px}
+.message-options button{border:1px solid #d9dfd1;border-radius:11px;background:#fffdf8;padding:16px;text-align:left;min-width:0}
+.message-options b{display:block;font-size:15px;line-height:1.7}
+.message-options small{display:block;font-size:12px;line-height:1.9;color:#6c795f;margin:6px 0}
+.message-options button>span{display:block;font-family:'Klee One',serif;font-size:17px;line-height:1.9;color:#5e4335;margin-top:10px}
+@media(max-width:360px){.tabs{padding:0 8px}.tabs button{font-size:12px;padding-right:2px;padding-left:2px}.message-options button{padding:14px}.message-options b{font-size:14px}}
