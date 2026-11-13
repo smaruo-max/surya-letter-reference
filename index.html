@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f6f2e8">
+  <title>SURYA｜お手紙のデザイン比較</title>
+  <meta name="description" content="紙、温かな文字色、上品な手書き書体を選び、スマートフォンでお手紙全体の読み心地を比較する参考ページ。">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Yuji+Syuku&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner"><a class="brand" href="#top" aria-label="ページの先頭">SURYA<span>お手紙のデザイン比較</span></a><button type="button" class="edit-button" data-open-settings="paper">選び直す <span aria-hidden="true">＋</span></button></div>
+    <p class="current-design" id="current-design" aria-live="polite">切り絵レター ／ 深いセピア ／ 端正な中字</p>
+  </header>
+  <main id="top">
+    <section class="introduction" aria-labelledby="page-title">
+      <p class="eyebrow">LETTER DESIGN STUDY</p>
+      <h1 id="page-title">丁寧に書いた言葉が、<br>やさしく届くように。</h1>
+      <p class="intro-text">紙・文字色・上品な手書き。<br>選びながら、手紙全体で見比べてください。</p>
+      <div class="category-buttons" aria-label="比較する項目">
+        <button type="button" data-open-settings="paper"><span class="category-label">紙</span><span class="category-count">3案</span><small id="paper-short">切り絵レター</small></button>
+        <button type="button" data-open-settings="ink"><span class="category-label">文字色</span><span class="category-count">4案</span><small id="ink-short">深いセピア</small></button>
+        <button type="button" data-open-settings="font"><span class="category-label">書体</span><span class="category-count">3案</span><small id="font-short">端正な中字</small></button>
+      </div>
+      <p class="design-caption">ボタンから候補を選ぶと、下の手紙に反映されます。</p>
+    </section>
+    <section class="letter-section" aria-labelledby="letter-title">
+      <p class="section-label" id="letter-title">この先にある景色</p>
+      <article class="letter" id="letter" data-paper="collage" data-font="klee600" aria-label="選んだデザインのお手紙">
+        <img class="paper-background" id="paper-background" src="assets/03_collage.png" alt="" aria-hidden="true" width="731" height="2152">
+        <div class="letter-copy" id="letter-copy"><p class="letter-opening"><strong><span class="phrase">同じことで</span><span class="phrase">悩んだり、</span>つい<span class="phrase">自分を責めたり</span><span class="phrase">してしまうのは、</span><span class="phrase">あなたのせいでは</span><span class="phrase">ありません。</span></strong></p>
+<p><span class="phrase">性格が弱いからでも、</span><span class="phrase">努力が足りないからでも</span><span class="phrase">ありません。</span></p>
+
+<p><span class="phrase">人の顔色を</span><span class="phrase">うかがうことも、</span><span class="phrase">言いたいことを</span><span class="phrase">飲み込むことも、</span><span class="phrase">これまで自分を守るために</span>必要だった<span class="phrase">のかもしれません。</span></p>
+
+<p>でも、<span class="phrase">かつて必要だった方法が、</span><span class="phrase">今のあなたを</span><span class="phrase">苦しくさせていることも</span><span class="phrase">あります。</span></p>
+
+<p class="quote-intro">今は必要のなくなった考え方を、</p>
+
+<p class="letter-quote">「今まで守ってくれて、<br><span class="phrase">ありがとう」</span></p>
+
+<p><span class="phrase">そんな気持ちで、</span>少しずつ<span class="phrase">手放していきませんか。</span><span class="phrase">すぐに変わらなくても</span><span class="phrase">大丈夫です。</span></p>
+
+<p>これからは、<span class="phrase">人からどう思われるかと</span><span class="phrase">同じように、</span><strong><span class="phrase">自分がどう生きたいか</span></strong>も<span class="phrase">大切にしてほしいと</span><span class="phrase">思います。</span></p>
+
+<p>「私はこれを選んだ」と<span class="phrase">納得できる人生のために、</span><span class="phrase">今の自分を支える考え方を</span><span class="phrase">育てていきましょう。</span></p>
+
+<p><span class="phrase">その方法を古典から学び、</span><span class="phrase">日常のなかで</span><span class="phrase">練習を重ねます。</span></p>
+
+<p>あなたが、<span class="phrase">もっと軽やかに、</span><span class="phrase">自分の人生を</span><span class="phrase">生きていけるように、</span><strong><span class="phrase">私もご一緒します。</span></strong></p>
+</div>
+        <div class="signature"><span class="signature-crop"><img src="assets/harada-signature-original.png" alt="原田裕子先生の直筆サイン" width="2172" height="724"></span></div>
+      </article>
+      <button type="button" class="bottom-edit" data-open-settings="font">別の組み合わせで見てみる <span aria-hidden="true">↗</span></button>
+      <p class="manuscript-note">本文は、現在のモックアップにある仮短縮案です。<br>紙・文字色・書体の見え方を確認する参考ページです。</p>
+    </section>
+  </main>
+  <dialog id="settings-dialog" aria-labelledby="settings-title">
+    <div class="dialog-heading"><div><p class="eyebrow">YOUR LETTER</p><h2 id="settings-title">デザインを選ぶ</h2></div><button type="button" class="close-button" id="close-settings" aria-label="選択画面を閉じる">×</button></div>
+    <div class="tabs" role="tablist" aria-label="比較項目">
+      <button type="button" role="tab" id="tab-paper" aria-controls="panel-paper" aria-selected="true" data-tab="paper">紙</button>
+      <button type="button" role="tab" id="tab-ink" aria-controls="panel-ink" aria-selected="false" tabindex="-1" data-tab="ink">文字色</button>
+      <button type="button" role="tab" id="tab-font" aria-controls="panel-font" aria-selected="false" tabindex="-1" data-tab="font">上品な書体</button>
+    </div>
+    <section class="choice-panel" role="tabpanel" id="panel-paper" aria-labelledby="tab-paper">
+      <p class="panel-intro">同じ言葉でも、紙が変わると印象が変わります。</p>
+      <div class="paper-options">
+        <button type="button" class="paper-option" data-paper-choice="looseleaf" aria-pressed="false"><span class="paper-thumb"><img src="assets/01_looseleaf.png" alt="" width="725" height="2169"></span><span class="option-no">01</span><span class="option-name">温かな<br>ルーズリーフ</span><small>身近なノートのように</small></button>
+        <button type="button" class="paper-option" data-paper-choice="washi" aria-pressed="false"><span class="paper-thumb"><img src="assets/02_washi.png" alt="" width="724" height="2172"></span><span class="option-no">02</span><span class="option-name">手漉き和紙の<br>便せん</span><small>静かに言葉を届ける</small></button>
+        <button type="button" class="paper-option" data-paper-choice="collage" aria-pressed="true"><span class="paper-thumb"><img src="assets/03_collage.png" alt="" width="731" height="2152"></span><span class="option-no">03</span><span class="option-name">切り絵を添えた<br>レター</span><small>LPの世界観とつなぐ</small></button>
+      </div>
+    </section>
+    <section class="choice-panel" role="tabpanel" id="panel-ink" aria-labelledby="tab-ink" hidden>
+      <p class="panel-intro">温もりを感じながら、しっかり読める濃さに。</p>
+      <div class="ink-options">
+        <button type="button" data-ink-choice="sepia" aria-pressed="true" style="--swatch:#5E4335"><span class="swatch"></span><span><b>深いセピア</b><small>穏やかな、手紙らしい温もり</small></span></button>
+        <button type="button" data-ink-choice="cocoa" aria-pressed="false" style="--swatch:#814F43"><span class="swatch"></span><span><b>赤みのココア</b><small>ほんのり赤みのあるやさしさ</small></span></button>
+        <button type="button" data-ink-choice="olive" aria-pressed="false" style="--swatch:#5B6041"><span class="swatch"></span><span><b>オリーブブラウン</b><small>自然を感じる、落ち着いた色</small></span></button>
+        <button type="button" data-ink-choice="gray" aria-pressed="false" style="--swatch:#57504A"><span class="swatch"></span><span><b>温かな墨グレー</b><small>やわらかく、すっきりした印象</small></span></button>
+      </div>
+    </section>
+    <section class="choice-panel" role="tabpanel" id="panel-font" aria-labelledby="tab-font" hidden>
+      <p class="panel-intro">丁寧さと上品さを大切にした、手書きの3つの表情。</p>
+      <div class="font-options">
+        <button type="button" data-font-choice="klee400" aria-pressed="false"><span class="font-option-heading"><b>A　端正な細字</b><small>Klee One 400</small></span><span class="font-sample klee400">心を込めて、ありがとう</span><small>繊細で、落ち着いたペン字の印象。</small></button>
+        <button type="button" data-font-choice="klee600" aria-pressed="true"><span class="font-option-heading"><b>B　端正な中字</b><small>Klee One 600</small></span><span class="font-sample klee600">心を込めて、ありがとう</span><small>Aと同じ筆跡を、スマホで読みやすい濃さに。</small></button>
+        <button type="button" data-font-choice="yuji" aria-pressed="false"><span class="font-option-heading"><b>C　凛とした筆文字</b><small>Yuji Syuku 400</small></span><span class="font-sample yuji">心を込めて、ありがとう</span><small>格式を感じる、毛筆寄りの手書き。</small></button>
+      </div>
+      <p class="panel-note">A・Bは同じ書体の太さ違いです。Cはペン字よりも、筆で書いたような表情があります。</p>
+    </section>
+    <div class="dialog-footer"><p id="dialog-selection">切り絵レター ／ 深いセピア ／ 端正な中字</p><button type="button" id="apply-settings">この組み合わせで手紙を見る</button></div>
+  </dialog>
+</body>
+</html>
